@@ -1,0 +1,132 @@
+/* pages/elm/elm.wxss */
+.box {
+  background: #eee;
+}
+
+
+/* 头部 */
+.header {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  padding: 0 30rpx;
+  height: 90rpx;
+  align-items: center;
+  background: rgb(26, 115, 232);
+  justify-content: space-between;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.header_ {
+  height: 90rpx;
+}
+
+
+/* 当前定位城市 */
+.nav {
+  height: 150rpx;
+  background: #fff;
+  border-bottom: 4rpx solid #ddd;
+  margin-bottom: 20rpx;
+}
+.nav>.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  border-bottom: 2rpx solid #ccc;
+  height: 70rpx;
+}
+.nav>.top>text {
+  color: rgb(151, 150, 150);
+  font-size: 24rpx;
+  font-weight: bold;
+}
+.nav>.bottom {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  justify-content: space-between;
+  padding: 0 30rpx;
+}
+.nav>.bottom>text {
+  font-size: 28rpx;
+  color: #ddd;
+}
+.nav>.bottom>text:nth-child(1) {
+  color: #3190e8;
+}
+
+
+/* 热门城市 */
+.hot {
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.hot>.title {
+  height: 72rpx;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #eee;
+  text-indent: 20rpx;
+  color: rgb(102, 96, 96);
+  line-height: 72rpx;
+}
+.hot-content {
+  height: 160rpx;
+  display: flex;
+  flex-wrap: wrap;
+  color: #3190e8;
+}
+.hot-content>view {
+  width: 25%;
+  height: 80rpx;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  border-right: 2rpx solid #eee;
+  border-bottom: 2rpx solid #eee;
+}
+.hot-content>view:nth-child(4n) {
+  border-right: none;
+}
+
+
+/* 全部城市 */
+.group {
+  border-top: 2rpx solid #eee;
+}
+.group>.item>.title {
+  height: 72rpx;
+  line-height: 72rpx;
+  text-indent: 20rpx;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.group>.item>.title>text {
+  color: rgb(154, 151, 151);
+  font-size: 24rpx;
+}
+.group>.item>.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.group>.item>.content>view {
+  width: 25%;
+  height: 80rpx;
+  border: 2rpx solid #eee;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-right: 2rpx solid #eee;
+  border-bottom: 2rpx solid #eee;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.group>.item>.content>view:nth-child(4n) {
+  border-right: none;
+}

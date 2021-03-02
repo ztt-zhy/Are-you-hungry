@@ -1,0 +1,47 @@
+<!--pages/elm/elm.wxml-->
+<view class="box">
+	<!-- 头部 -->
+	<view class="header">
+		<view class="left">elm</view>
+		<view class="right">登录 | 注册</view>
+	</view>
+	<view class="header_"></view>
+
+
+
+
+	<!-- 当前定位城市 -->
+	<view class="nav">
+		<view class="top">
+			<text>当前定位城市：</text>
+			<text>定位不准确时请在城市列表中选择</text>
+		</view>
+		<view class="bottom">
+			<text>北京</text>
+			<text>></text>
+		</view>
+	</view>
+
+
+	<!-- 热门城市 -->
+	<view class="hot">
+		<view class="title">热门城市</view>
+		<view class="hot-content">
+			<view wx:for="{{hotCity}}">{{item.name}}</view>
+		</view>
+	</view>
+</view>
+
+
+
+<!-- 全部城市 -->
+<view class="group">
+	<view class="item"  wx:for="{{ss}}">
+		<view class="title" >{{item}}<text wx:if="{{item=='A'}}">（按字母排序）</text></view>
+		<view class="content">
+			<view wx:for="{{allCity[item]}}" wx:for-item="t" 
+      bindtap="jump" data-id="{{t.id}}"
+      >{{t.name}}</view>
+		</view>
+	</view>
+</view>

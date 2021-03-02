@@ -1,0 +1,16 @@
+{
+  "pages":[
+    "pages/elm/elm",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/dateil/dateil" 
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "饿了么",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
